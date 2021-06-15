@@ -1,100 +1,93 @@
+/*First thing to do remove all default styles from the browser*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/*to box model*/
-}
-body{
-    font-family: sans-serif;
-    background-color: aliceblue;
-    overflow: hidden;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar__brand{
-    width: 100px;
+    box-sizing: border-box;
     
 }
-
-.nav__logo{
-    width: 100%;
+/* Global */
+body{
+    font-family: "Mate+SC",sans-serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+    
 }
-.nav__item{
-   background-image: linear-gradient(
+/* We are creating reusable class here to style more buttons */
+.button_primary{
+    background-image: linear-gradient(
     to right,
     #ff512f 0%,
     #dd2476 51%,
     #ff512f 100%
-  );
-color: antiquewhite;
-    padding: 12px;
+  ); 
+    color: white;
+    padding:12px;
     border: none;
     border-radius: 6px;
-        
 }
-.hero__image{
+.conatiner{
+    widows: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hero_container{
+    widows: 100%;
+}
+.hero_image_container{
     width: 100%;
 }
-.hero__text{
-    font-size: 30px;
-    color: #1d3557;
+.hero_image{
+    width: 100%;
     
+}
+/*Navbar styling*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar_brand{
+    width: 100px;
+}
+.navbar_logo{
+    width: 100%;
+}
 
-}
+
 @media(min-width:768px){
     .navbar{
-        justify-content:space-between;
-        padding: 10px;
-        
+        justify-content: space-between;
+        padding: 10px 20px;
     }
-}
-@media(min-width:768px){
-    .navbar{
-        justify-content:space-between;
-        padding: 10px;
-        
-    }
-    .navbar__brand{
+    .navbar_brand{
     width: 150px;
-    
 }
-
-   .nav__item{ 
-       padding:20px;
-       font-size: 20px;
+    .button_primary{
+/*        padding has two value: first for top and bottom 
+        second for right and left*/
+        padding: 15px;
+        font-size: 20px;
     }
-       
+    .hero_container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+    }
 }
-
 @media(min-width:1020px){
     .container{
-        max-width: 
+        max-width: 1010px;
+    }
+    .hero_image_container{
+        width: 500px;
+        height: 500%;
         
     }
-    .navbar__brand{
-    width: 150px;
     
 }
-
-   .nav__item{ 
-       padding:20px;
-       font-size: 20px;
-    }
-       
-}
-
-.button__primary{
-    paddi
-}
-
-
-
-/*Menu styles*/
-.food__menu__card{
-    width: 100%;
-}
-.food__image{
-    width: 100%;
+@media(min-width:1400px){
+    
 }
